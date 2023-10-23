@@ -1,6 +1,7 @@
 import React from "react";
 import { FaShippingFast } from "react-icons/fa";
 import { GrSearch } from "react-icons/gr";
+import { FiLogIn } from "react-icons/fi";
 import "./nav.css";
 const Nav = () => {
   return (
@@ -24,6 +25,14 @@ const Nav = () => {
               {" "}
               <GrSearch />
             </button>
+          </div>
+          <div className="user">
+            <div className="icon">
+              <FiLogIn />
+            </div>
+            <div className="btn">
+              <button>Login</button>
+            </div>
           </div>
         </div>
       </div>
