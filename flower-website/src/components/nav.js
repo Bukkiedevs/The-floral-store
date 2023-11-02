@@ -2,8 +2,12 @@ import React from "react";
 import { FaShippingFast } from "react-icons/fa";
 import { GrSearch } from "react-icons/gr";
 import { FiLogIn } from "react-icons/fi";
+import { CiLogout } from "react-icons/ci";
+import { useAuth0 } from "@auth0/auth0-react";
+
 import "./nav.css";
 const Nav = () => {
+  const { loginWithRedirect, logout, user, isAuthenticated } = useAuth0();
   return (
     <>
       <div className="header">
@@ -26,14 +30,35 @@ const Nav = () => {
               <GrSearch />
             </button>
           </div>
-          <div className="user">
-            <div className="icon">
-              <FiLogIn />
+          {isAuthenticated ? (
+            // Enabled when users are loggedin - Logout Button with users profile
+            <div className="user">
+              <div className="icon">
+                <CiLogout />
+              </div>
+              <div className="btn">
+                <button
+                  onClick={() =>
+                    logout({
+                      logoutParams: { returnTo: window.location.origin },
+                    })
+                  }
+                >
+                  Logout
+                </button>
+              </div>
             </div>
-            <div className="btn">
-              <button>Login</button>
+          ) : (
+            // Enabled whe users are not logged in - Login button
+            <div className="user">
+              <div className="icon">
+                <FiLogIn />
+              </div>
+              <div className="btn">
+                <button onClick={() => loginWithRedirect()}>Login</button>
+              </div>
             </div>
-          </div>
+          )}
         </div>
       </div>
     </>

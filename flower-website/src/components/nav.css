@@ -38,5 +38,41 @@
   padding: 10px 10px;
   outline: none;
   background: none;
-  border-radius: 10px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  width: 250px;
+  border: none;
+  background: #f6f7f8;
+}
+.header .mid-header .search-box button {
+  padding: 10px 10px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  width: 50px;
+  border: none;
+  outline: none;
+  color: #ffff;
+  cursor: pointer;
+  background: #8f6e5d;
+  margin-right: 30px;
+  transition: 0.5s;
+  font-weight: 600;
+}
+.header .mid-header .search-box button:hover {
+  background: #fed700;
+  color: #cd1e7c;
+}
+.header .mid-header .user {
+  display: flex;
+  margin-right: 30px;
+}
+.header .mid-header .icon {
+  margin-right: 10px;
+}
+.header .mid-header .btn button {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: none;
+  
 }
