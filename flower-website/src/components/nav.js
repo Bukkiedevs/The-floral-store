@@ -3,6 +3,7 @@ import { FaShippingFast } from "react-icons/fa";
 import { GrSearch } from "react-icons/gr";
 import { FiLogIn } from "react-icons/fi";
 import { CiLogout } from "react-icons/ci";
+import {BiSolidUser} from "react-icons/bi";
 import { useAuth0 } from "@auth0/auth0-react";
 
 import "./nav.css";
@@ -31,7 +32,7 @@ const Nav = () => {
             </button>
           </div>
           {isAuthenticated ? (
-            // Enabled when users are loggedin - Logout Button with users profile
+            // Enabled when users are loggedin - Logout Button and users profile will be shown
             <div className="user">
               <div className="icon">
                 <CiLogout />
@@ -49,7 +50,7 @@ const Nav = () => {
               </div>
             </div>
           ) : (
-            // Enabled whe users are not logged in - Login button
+            // Enabled when users are not logged in - Login button and users profile will be shown
             <div className="user">
               <div className="icon">
                 <FiLogIn />
@@ -59,6 +60,31 @@ const Nav = () => {
               </div>
             </div>
           )}
+        </div>
+        <div className="last_header">
+          <div className="user_profile">
+            {
+              //User profile will show here 
+              isAuthenticated &&
+              <>
+              <div className="icon">
+<BiSolidUser/>
+              </div>
+              <h2>
+                {
+                  user.name
+                }
+              </h2>
+              <p>
+                {
+                  user.email
+                }
+              </p>
+              </>
+            }
+
+          </div>
+
         </div>
       </div>
     </>
