@@ -65,21 +65,26 @@ const Nav = () => {
           <div className="user_profile">
             {
               //User profile will show here 
-              isAuthenticated &&
+              isAuthenticated ?
               <>
-              <div className="icon">
-<BiSolidUser/>
+              <div className="icon"><BiSolidUser/>
               </div>
+              <div className="info">
               <h2>
-                {
-                  user.name
-                }
+                {user.name}
               </h2>
               <p>
-                {
-                  user.email
-                }
+                {user.email}
               </p>
+              </div>
+              </>
+              :
+              <>
+              <div className="icon"><BiSolidUser/>
+              </div>
+              <div className="info"> 
+<p> Please Login</p>
+              </div>
               </>
             }
 
