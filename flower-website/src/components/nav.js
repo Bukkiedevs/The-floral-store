@@ -3,8 +3,9 @@ import { FaShippingFast } from "react-icons/fa";
 import { GrSearch } from "react-icons/gr";
 import { FiLogIn } from "react-icons/fi";
 import { CiLogout } from "react-icons/ci";
-import {BiSolidUser} from "react-icons/bi";
+import { BiSolidUser } from "react-icons/bi";
 import { useAuth0 } from "@auth0/auth0-react";
+import { Link } from "react-router-dom";
 
 import "./nav.css";
 const Nav = () => {
@@ -64,32 +65,63 @@ const Nav = () => {
         <div className="last_header">
           <div className="user_profile">
             {
-              //User profile will show here 
-              isAuthenticated ?
-              <>
-              <div className="icon"><BiSolidUser/>
-              </div>
-              <div className="info">
-              <h2>
-                {user.name}
-              </h2>
-              <p>
-                {user.email}
-              </p>
-              </div>
-              </>
-              :
-              <>
-              <div className="icon"><BiSolidUser/>
-              </div>
-              <div className="info"> 
-<p> Please Login</p>
-              </div>
-              </>
+              //User profile will show here
+              isAuthenticated ? (
+                <>
+                  <div className="icon">
+                    <BiSolidUser />
+                  </div>
+                  <div className="info">
+                    <h2>{user.name}</h2>
+                    <p>{user.email}</p>
+                  </div>
+                </>
+              ) : (
+                <>
+                  <div className="icon">
+                    <BiSolidUser />
+                  </div>
+                  <div className="info">
+                    <p> Please Login</p>
+                  </div>
+                </>
+              )
             }
-
           </div>
-
+          <div clsssName="nav">
+            <ul>
+              <li>
+                <link to="/" className="Home">
+                  {" "}
+                  Home
+                </link>
+              </li>
+              <li>
+                <link to="/" className="Home">
+                  {" "}
+                  Home
+                </link>
+              </li>
+              <li>
+                <link to="/" className="Home">
+                  {" "}
+                  Home
+                </link>
+              </li>
+              <li>
+                <link to="/" className="Home">
+                  {" "}
+                  Home
+                </link>
+              </li>
+              <li>
+                <link to="/" className="Home">
+                  {" "}
+                  Home
+                </link>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </>
