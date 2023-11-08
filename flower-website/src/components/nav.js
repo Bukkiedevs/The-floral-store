@@ -62,8 +62,8 @@ const Nav = () => {
             </div>
           )}
         </div>
-        <div className="last_header">
-          <div className="user_profile">
+        <div className="last-header">
+          <div className="user-profile">
             {
               //User profile will show here
               isAuthenticated ? (
@@ -88,39 +88,42 @@ const Nav = () => {
               )
             }
           </div>
-          <div clsssName="nav">
+          <div className="nav">
             <ul>
               <li>
-                <link to="/" className="Home">
+                <Link to="/" className="link">
                   {" "}
                   Home
-                </link>
+                </Link>
               </li>
               <li>
-                <link to="/" className="Home">
+                <Link to="/shop" className="link">
                   {" "}
-                  Home
-                </link>
+                  Shop
+                </Link>
               </li>
               <li>
-                <link to="/" className="Home">
+                <Link to="/collection" className="link">
                   {" "}
-                  Home
-                </link>
+                  Collection
+                </Link>
               </li>
               <li>
-                <link to="/" className="Home">
+                <Link to="/about" className="link">
                   {" "}
-                  Home
-                </link>
+                  About
+                </Link>
               </li>
               <li>
-                <link to="/" className="Home">
+                <Link to="/contact" className="link">
                   {" "}
-                  Home
-                </link>
+                  Contact
+                </Link>
               </li>
             </ul>
+          </div>
+          <div className="offer">
+            <p>Get SEK 350 off your first order</p>
           </div>
         </div>
       </div>
