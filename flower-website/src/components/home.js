@@ -13,7 +13,9 @@ const Home = () => {
             </h3>
             <h2>Rose</h2>
             <p>SEK 350 off your first order</p>
-            <Link>Buy Now</Link>
+            <Link to="/shop" className="link">
+              Buy Now
+            </Link>
           </div>
         </div>
       </div>
