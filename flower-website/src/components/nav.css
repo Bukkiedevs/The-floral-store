@@ -103,7 +103,7 @@
   font-size: 14px;
 }
 .header .last-header .nav {
-  margin-top: 10px;
+  margin-top: 15px;
 }
 .header .last-header .nav ul {
   display: flex;
@@ -115,5 +115,22 @@
   margin-right: 20px;
   text-decoration: none;
   color: #ffff;
-  font-weight: 800;
+  font-weight: 600;
+  transition: 0.5%;
+}
+.header .last-header .nav ul li .link:hover {
+  color: #ababab;
+}
+.header .last-header .offer {
+  margin-right: 20px;
+  padding: 10px 20px;
+  background: #8f6d5c;
+  border-radius: 10px;
+}
+.header .last-header .offer p {
+  margin-top: 5px;
+  text-transform: uppercase;
+  color: #232323;
+  font-weight: 600;
+  font-size: 14px;
 }
