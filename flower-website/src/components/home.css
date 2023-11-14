@@ -13,4 +13,24 @@
   background: url("http://localhost:3000/images/background-unsplash.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  padding: 50px 60px;
+}
+.home .upper-banner .contact {
+  width: 100%;
+  position: relative;
+  top: 20%;
+  padding: 10px 50px;
+  color: #ffff;
+}
+.home .upper-banner h3 {
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: turquoise;
+}
+.home .upper-banner h2 {
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-size: 32px;
+  margin-top: 15px;
 }
