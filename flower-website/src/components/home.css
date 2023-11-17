@@ -53,3 +53,27 @@
   color: #fed700;
   background: #cd1e7c;
 }
+.home.trending {
+  padding: 20px 30px;
+  width: 100%;
+}
+.home .trending .container {
+  max-width: 100%;
+  display: flex;
+}
+.home .trending .container .left-box {
+  padding: 10px 20px;
+  width: 75%;
+}
+.home .trending .container .left-box .header {
+  display: flex;
+  max-width: 100%;
+  padding: 10px 10px;
+  background-color: #f6f7f8;
+  justify-content: space-between;
+}
+.home .trending .container .left-box .header .heading h2 {
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #232323;
+}
