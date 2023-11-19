@@ -93,3 +93,27 @@
 .home .trending .container .left-box .header .cate h3:hover {
   color: #cd1e7c;
 }
+.home .trending .container .left-box .products {
+  max-width: 100px;
+}
+.home .trending .container .left-box .products .container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.home .trending .container .left-box .products .container .box {
+  width: 195px;
+  height: 295px;
+  padding: 10px 10px;
+  border: 2px solid #f6f7f8;
+  margin-top: 20px;
+  margin-left: 20px;
+  background: #f6f7f8;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.home .trending .container .left-box .products .container .box .img-box img {
+  width: 190px;
+  height: 190px;
+  object-fit: cover;
+}
