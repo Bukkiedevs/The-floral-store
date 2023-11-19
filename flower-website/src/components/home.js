@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { FaEye, FaHeart } from "react-icons/fa";
 import Homeproducts from "./home-products";
 import "./home.css";
 const Home = () => {
@@ -38,6 +39,14 @@ const Home = () => {
                         <div className="box">
                           <div className="img-box">
                             <img src={curElm.image} alt=""></img>
+                            <div className="icon">
+                              <div className="icon-box">
+                                <FaEye />
+                              </div>
+                              <div className="icon-box">
+                                <FaHeart />
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </>

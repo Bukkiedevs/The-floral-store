@@ -94,7 +94,7 @@
   color: #cd1e7c;
 }
 .home .trending .container .left-box .products {
-  max-width: 100px;
+  max-width: 100%;
 }
 .home .trending .container .left-box .products .container {
   width: 100%;
@@ -112,8 +112,62 @@
   overflow: hidden;
   border-radius: 5px;
 }
+
+.home .trending .container .left-box .products .container .box .img-box {
+  display: flex;
+}
 .home .trending .container .left-box .products .container .box .img-box img {
   width: 190px;
   height: 190px;
   object-fit: cover;
+}
+.home .trending .container .left-box .products .container .box .img-box .icon {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  transition: 0.5s;
+}
+.home
+  .trending
+  .container
+  .left-box
+  .products
+  .container
+  .box
+  .img-box
+  .icon
+  .icon-box {
+  padding: 10px 10px;
+
+  margin-top: 10px;
+  margin-left: 0%;
+  box-shadow: rgba(0, 0, 0 24) 0px 3px 8px;
+  z-index: 1;
+  background: #ffff;
+  color: #cd1e7c;
+  transition: 0.5s;
+}
+.home
+  .trending
+  .container
+  .left-box
+  .products
+  .container
+  .box:hover
+  .img-box
+  .icon {
+  margin-left: -32%;
+}
+.home
+  .trending
+  .container
+  .left-box
+  .products
+  .container
+  .box
+  .img-box
+  .icon
+  .icon-box:hover {
+  color: #ffff;
+  background-color: #cd1e7c;
 }
