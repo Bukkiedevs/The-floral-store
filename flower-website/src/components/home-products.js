@@ -21,7 +21,7 @@ const Homeproducts = [
     price: "385",
     image: "images/p3.avif",
     cat: " ",
-    type: "new",
+    type: "featured",
   },
   {
     id: 4,
@@ -29,7 +29,7 @@ const Homeproducts = [
     price: "200",
     image: "images/p4.avif",
     cat: " ",
-    type: "new",
+    type: "featured",
   },
   {
     id: 5,
@@ -37,7 +37,7 @@ const Homeproducts = [
     price: "450",
     image: "images/p5.avif",
     cat: " ",
-    type: "new",
+    type: "top-seller",
   },
   {
     id: 6,
@@ -45,7 +45,7 @@ const Homeproducts = [
     price: "500",
     image: "images/p6.avif",
     cat: " ",
-    type: "new",
+    type: "top-seller",
   },
   {
     id: 7,
@@ -61,7 +61,7 @@ const Homeproducts = [
     price: "500",
     image: "images/p8.webp",
     cat: " ",
-    type: "new",
+    type: "top-seller",
   },
 ];
 export default Homeproducts;

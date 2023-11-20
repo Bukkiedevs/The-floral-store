@@ -5,6 +5,17 @@ import Homeproducts from "./home-products";
 import "./home.css";
 const Home = () => {
   const [trendingProduct, setTrendingProduct] = useState(Homeproducts);
+  //Filter for trending product
+  const filtercate = (x) => {
+    const filterproduct = Homeproducts.filter((curElm) => {
+      return curElm.type === x;
+    });
+    setTrendingProduct(filterproduct);
+  };
+  //All Trending Product
+  const allTrendingProduct = () => {
+    setTrendingProduct(Homeproducts);
+  };
   return (
     <>
       <div className="home">
@@ -23,12 +34,12 @@ const Home = () => {
             <div className="left-box">
               <div className="header">
                 <div className="heading">
-                  <h2>Trending product</h2>
+                  <h2 onClick={() => allTrendingProduct()}>Trending</h2>
                 </div>
                 <div className="cate">
-                  <h3>New</h3>
-                  <h3>Featured</h3>
-                  <h3>Top-seller</h3>
+                  <h3 onClick={() => filtercate("new")}>New</h3>
+                  <h3 onClick={() => filtercate("featured")}>Featured</h3>
+                  <h3 onClick={() => filtercate("top-seller")}>Top-seller</h3>
                 </div>
               </div>
               <div className="products">
@@ -47,6 +58,11 @@ const Home = () => {
                                 <FaHeart />
                               </div>
                             </div>
+                          </div>
+                          <div className="info">
+                            <h3>{curElm.Name}</h3>
+                            <p>SEK{curElm.price}</p>
+                            <button className="btn">Add to cart</button>
                           </div>
                         </div>
                       </>
