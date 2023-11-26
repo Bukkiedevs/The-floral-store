@@ -71,7 +71,9 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className="right-box"></div>
+            <div className="right-box">
+              <div className=""></div>
+            </div>
           </div>
         </div>
       </div>
