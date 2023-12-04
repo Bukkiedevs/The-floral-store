@@ -88,8 +88,8 @@ const Home = () => {
                       <h3>Stephan robot</h3>
                       <h4>web designer</h4>
                       <p>
-                        We have discovered that the flowers are freshly preceive
-                        and moisten to our taste
+                        We have discovered that the flowers are freshly plunked
+                        and moisten to our taste! Super cute.
                       </p>
                     </div>
                   </div>
