@@ -217,3 +217,58 @@
   background: #cd1e7c;
   color: #f6f7f8;
 }
+.home .trending .container .right-box {
+  padding: 10px 20px;
+  width: 24%;
+}
+.home .trending .container .right-box .container {
+  max-width: 100%;
+}
+.home .trending .container .right-box .container .testimonial {
+  width: 100%;
+  border: 4px solid #f6f7f8;
+}
+.home .trending .container .right-box .container .testimonial .head {
+  padding: 10px 10px;
+  width: 100%;
+  background: #f6f7f8;
+}
+.home .trending .container .right-box .container .testimonial .head h3 {
+  text-align: center;
+  color: #232323;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  letter-spacing: 1px;
+}
+.home .trending .container .right-box .container .testimonial .detail {
+  padding: 10px 20px;
+}
+.home
+  .trending
+  .container
+  .right-box
+  .container
+  .testimonial
+  .head
+  .img-box
+  img {
+  margin-left: 50px;
+}
+.home .trending .container .right-box .container .testimonial .detail .info {
+  margin-top: 10px;
+}
+.home .trending .container .right-box .container .testimonial .detail .info h3 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #232323;
+}
+.home .trending .container .right-box .container .testimonial .detail .info h4 {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 10px;
+  color: #cd1e7c;
+  font-weight: 300;
+  text-transform: uppercase;
+}

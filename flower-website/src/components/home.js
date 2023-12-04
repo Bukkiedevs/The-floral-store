@@ -72,7 +72,29 @@ const Home = () => {
               </div>
             </div>
             <div className="right-box">
-              <div className=""></div>
+              <div className="container">
+                <div className="testimonial">
+                  <div className="head">
+                    <h3>Our Reviews</h3>
+                  </div>
+                  <div className="detail">
+                    <div className="img-box">
+                      <img
+                        src="images/customer-support.jpeg"
+                        alt="testimonial"
+                      ></img>
+                    </div>
+                    <div className="info">
+                      <h3>Stephan robot</h3>
+                      <h4>web designer</h4>
+                      <p>
+                        We have discovered that the flowers are freshly preceive
+                        and moisten to our taste
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
