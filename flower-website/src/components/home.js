@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaEye, FaHeart } from "react-icons/fa";
+import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube } from "react-icons/fa";
 import Homeproducts from "./home-products";
 import "./home.css";
 const Home = () => {
@@ -72,7 +73,7 @@ const Home = () => {
               </div>
             </div>
             <div className="right-box">
-              <div className="container">
+              <div className="right-container">
                 <div className="testimonial">
                   <div className="head">
                     <h3>Our Reviews</h3>
@@ -85,12 +86,40 @@ const Home = () => {
                       ></img>
                     </div>
                     <div className="info">
-                      <h3>Stephan robot</h3>
-                      <h4>web designer</h4>
+                      <h3>Stephan Robot</h3>
+                      <h4>Web designer</h4>
                       <p>
                         We have discovered that the flowers are freshly plunked
                         and moisten to our taste! Super cute.
                       </p>
+                    </div>
+                  </div>
+                  <div className="newsletter">
+                    <div className="head">
+                      <h3>Newsletter</h3>
+                    </div>
+                    <div className="form">
+                      <p>Join our mailing list</p>
+                      <input
+                        type="email"
+                        placeholder="Email"
+                        autoComplete="off"
+                      ></input>
+                      <button>Subscribe</button>
+                      <div className="icon-box">
+                        <div className="icon">
+                          <FaFacebookF />
+                        </div>
+                        <div className="icon">
+                          <FaTwitter />
+                        </div>
+                        <div className="icon">
+                          <FaInstagram />
+                        </div>
+                        <div className="icon">
+                          <FaYoutube />
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
