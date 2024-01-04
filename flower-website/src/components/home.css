@@ -330,3 +330,67 @@
   font-size: 16px;
   letter-spacing: 1px;
 }
+.home .trending .container .right-box .right-container .newsletter .form {
+  margin-top: 10px;
+  width: 100%;
+}
+.home .trending .container .right-box .right-container .newsletter .form .p {
+  text-align: center;
+  text-transform: capitalize;
+  color: #8a8a8a;
+}
+.home .trending .container .right-box .right-container .newsletter .form input {
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px 10px;
+  background: none;
+  outline: none;
+  border: 1px solid #8a8a8a;
+  color: #232323;
+}
+.home
+  .trending
+  .container
+  .right-box
+  .right-container
+  .newsletter
+  .form
+  button {
+  margin-top: 10px;
+  margin-left: 60px;
+  padding: 10px 30px;
+  border: none;
+  background: #fed700;
+  color: #232323;
+  font-weight: 600;
+  cursor: pointer;
+}
+.home
+  .trending
+  .container
+  .right-box
+  .right-container
+  .newsletter
+  .form
+  .icon-box {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.home
+  .trending
+  .container
+  .right-box
+  .right-container
+  .newsletter
+  .form
+  .icon-box
+  .icon {
+  padding: 10px 10px;
+  border-radius: 50%;
+  border: 1px solid #cd1e7c;
+  color: #cd1e7c;
+  margin-bottom: 30%;
+  cursor: pointer;
+}
