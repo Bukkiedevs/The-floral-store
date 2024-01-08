@@ -15,6 +15,33 @@ const Homeproducts = [
     cat: " ",
     type: "new",
   },
+
+  {
+    id: 2,
+    Name: "product2",
+    price: "450",
+    image: "images/p2.avif",
+    cat: " ",
+    type: "new",
+  },
+
+  {
+    id: 2,
+    Name: "product2",
+    price: "450",
+    image: "images/p2.avif",
+    cat: " ",
+    type: "new",
+  },
+  {
+    id: 2,
+    Name: "product2",
+    price: "450",
+    image: "images/p2.avif",
+    cat: " ",
+    type: "new",
+  },
+
   {
     id: 3,
     Name: "product3",

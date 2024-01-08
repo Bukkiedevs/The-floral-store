@@ -1,10 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FaEye, FaHeart } from "react-icons/fa";
 import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube } from "react-icons/fa";
 import Homeproducts from "./home-products";
 import "./home.css";
 const Home = () => {
+  //Product category
+  const [newProduct, setNewProduct] = useState([""]);
+  //Trending Product
   const [trendingProduct, setTrendingProduct] = useState(Homeproducts);
   //Filter for trending product
   const filtercate = (x) => {
@@ -16,6 +19,16 @@ const Home = () => {
   //All Trending Product
   const allTrendingProduct = () => {
     setTrendingProduct(Homeproducts);
+  };
+  //Product type
+  useEffect(() => {
+    productcategory();
+  });
+  const productcategory = () => {
+    const newcategory = Homeproducts.filter((x) => {
+      return x.type === "new";
+    });
+    setNewProduct(newcategory);
   };
   return (
     <>
@@ -87,8 +100,8 @@ const Home = () => {
                       ></img>
                     </div>
                     <div className="info">
-                      <h3>Stephan Robot</h3>
-                      <h4>Web designer</h4>
+                      <h3>Linda Thernström</h3>
+                      <h4>Florist</h4>
                       <p>
                         We have discovered that the flowers are freshly plunked
                         and moisten to our taste! Super cute.
@@ -140,9 +153,29 @@ const Home = () => {
             </div>
             <div className="right-box">
               <div className="top">
-                <img src="images/Multi-banner-2.avif" alt="banners"></img>
-                <img src="images/Multi-banner-2.avif" alt="banners"></img>
+                <img src="images/Multi-banner1.png" alt="banners"></img>
               </div>
+            </div>
+          </div>
+        </div>
+        <div className="product-type">
+          <div className="container">
+            <div className="box">
+              <div className="header">
+                <h2>New Product</h2>
+              </div>
+
+              {newProduct.map((curElm) => {
+                return (
+                  <>
+                    <div className="product-box">
+                      <div className="image-box">
+                        <img src={curElm.image} alt=" "></img>
+                      </div>
+                    </div>
+                  </>
+                );
+              })}
             </div>
           </div>
         </div>
