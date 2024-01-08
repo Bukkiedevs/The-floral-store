@@ -1,12 +1,21 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FaEye, FaHeart } from "react-icons/fa";
-import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaInstagram,
+  FaYoutube,
+  FaCartArrowDown,
+} from "react-icons/fa";
 import Homeproducts from "./home-products";
 import "./home.css";
 const Home = () => {
   //Product category
   const [newProduct, setNewProduct] = useState([""]);
+  const [featuredProduct, setFeaturedProduct] = useState([""]);
+  const [topProduct, setTopProduct] = useState([""]);
+
   //Trending Product
   const [trendingProduct, setTrendingProduct] = useState(Homeproducts);
   //Filter for trending product
@@ -25,11 +34,25 @@ const Home = () => {
     productcategory();
   });
   const productcategory = () => {
+    //New Product
     const newcategory = Homeproducts.filter((x) => {
       return x.type === "new";
     });
     setNewProduct(newcategory);
+
+    //Featured Product
+    const featuredcategory = Homeproducts.filter((x) => {
+      return x.type === "featured";
+    });
+    setFeaturedProduct(featuredcategory);
+
+    //Top product
+    const topcategory = Homeproducts.filter((x) => {
+      return x.type === "top-seller";
+    });
+    setTopProduct(topcategory);
   };
+
   return (
     <>
       <div className="home">
@@ -162,15 +185,98 @@ const Home = () => {
           <div className="container">
             <div className="box">
               <div className="header">
-                <h2>New Product</h2>
+                <h2>New Products</h2>
               </div>
-
               {newProduct.map((curElm) => {
                 return (
                   <>
                     <div className="product-box">
                       <div className="image-box">
                         <img src={curElm.image} alt=" "></img>
+                      </div>
+                      <div className="detail">
+                        <h3>{curElm.Name}</h3>
+                        <p>SEK{curElm.price}</p>
+                        <div className="icon">
+                          <button>
+                            {" "}
+                            <FaEye />
+                          </button>
+                          <button>
+                            {" "}
+                            <FaHeart />
+                          </button>
+                          <button>
+                            <FaCartArrowDown />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </>
+                );
+              })}
+            </div>
+
+            <div className="box">
+              <div className="header">
+                <h2>Featured Products</h2>
+              </div>
+              {featuredProduct.map((curElm) => {
+                return (
+                  <>
+                    <div className="product-box">
+                      <div className="image-box">
+                        <img src={curElm.image} alt=" "></img>
+                      </div>
+                      <div className="detail">
+                        <h3>{curElm.Name}</h3>
+                        <p>SEK{curElm.price}</p>
+                        <div className="icon">
+                          <button>
+                            {" "}
+                            <FaEye />
+                          </button>
+                          <button>
+                            {" "}
+                            <FaHeart />
+                          </button>
+                          <button>
+                            <FaCartArrowDown />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </>
+                );
+              })}
+            </div>
+            <div className="box">
+              <div className="header">
+                <h2>Top Products</h2>
+              </div>
+              {topProduct.map((curElm) => {
+                return (
+                  <>
+                    <div className="product-box">
+                      <div className="image-box">
+                        <img src={curElm.image} alt=" "></img>
+                      </div>
+                      <div className="detail">
+                        <h3>{curElm.Name}</h3>
+                        <p>SEK{curElm.price}</p>
+                        <div className="icon">
+                          <button>
+                            {" "}
+                            <FaEye />
+                          </button>
+                          <button>
+                            {" "}
+                            <FaHeart />
+                          </button>
+                          <button>
+                            <FaCartArrowDown />
+                          </button>
+                        </div>
                       </div>
                     </div>
                   </>
