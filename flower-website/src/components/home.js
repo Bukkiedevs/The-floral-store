@@ -70,6 +70,7 @@ const Home = () => {
                     );
                   })}
                 </div>
+                <button>Show More</button>
               </div>
             </div>
             <div className="right-box">
@@ -81,7 +82,7 @@ const Home = () => {
                   <div className="detail">
                     <div className="img-box">
                       <img
-                        src="images/customer-support.jpeg"
+                        src="images/agent-support.jpg"
                         alt="testimonial"
                       ></img>
                     </div>
@@ -123,6 +124,24 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="banners">
+          <div className="container">
+            <div className="left-box">
+              <div className="box">
+                <img src="images/P9-.jpg" alt="banners"></img>
+              </div>
+              <div className="box">
+                <img src="images/Multi-banner-2.avif" alt="banners"></img>
+              </div>
+            </div>
+            <div className="right-box">
+              <div className="top">
+                <img src="images/Multi-banner-2.avif" alt="banners"></img>
+                <img src="images/Multi-banner-2.avif" alt="banners"></img>
               </div>
             </div>
           </div>
