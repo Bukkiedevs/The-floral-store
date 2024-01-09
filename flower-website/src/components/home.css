@@ -478,7 +478,7 @@
 }
 .home .product-type .container .box .product-box {
   width: 100%;
-  height: 100px;
+  height: 110px;
   padding: 10px 10px;
   border: 1px solid #f6f7f8;
   display: flex;
@@ -487,4 +487,13 @@
   width: 100px;
   height: 100px;
   object-fit: cover;
+}
+.home .product-type .container .product-box .detail {
+  margin: 30px;
+}
+.home .product-type .container .product-box .detail h3 {
+  font-size: 14px;
+  color: #8a8a8a;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
