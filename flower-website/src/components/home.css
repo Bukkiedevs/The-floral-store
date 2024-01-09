@@ -497,3 +497,30 @@
   text-transform: uppercase;
   letter-spacing: 1px;
 }
+.home .product-type .container .box .product-box .detail p {
+  margin-top: 5px;
+  color: #cd1e7c;
+  letter-spacing: 1px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.home .product-type .container .box .product-box .detail .icon {
+  margin-top: 10px;
+  display: flex;
+}
+.home .product-type .container .box .product-box .detail .icon button {
+  background: none;
+  outline: none;
+  border: none;
+  padding: 10px 10px;
+  border: 2px solid #f6f7f8;
+  margin-left: 10px;
+  border-radius: 50%;
+  color: #8a8a8a;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.home .product-type .container .box .product-box .detail .icon button:hover {
+  background: #f6f6f6;
+  color: #232323;
+}
