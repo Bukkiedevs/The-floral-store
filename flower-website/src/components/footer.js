@@ -49,7 +49,36 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="right-box"></div>
+          <div className="right-box">
+            <div className="header">
+              <img src="images/floral.logo.png"></img>
+              <p>
+                {" "}
+                We sell quality and nice flowers, curated by the best florist
+                you could ever think of!
+              </p>
+            </div>
+            <div className="bottom">
+              <div className="box">
+                <h3>Your Account</h3>
+                <ul>
+                  <li>About us</li>
+                  <li>Account</li>
+                  <li>Payment</li>
+                  <li>Sales</li>
+                </ul>
+              </div>
+              <div className="box">
+                <h3>Product</h3>
+                <ul>
+                  <li>Delivery</li>
+                  <li>Track Order</li>
+                  <li>New Product</li>
+                  <li>Old Product</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </>

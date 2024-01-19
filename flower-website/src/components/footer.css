@@ -41,3 +41,22 @@ footer .container .left-box .box .detail p {
   font-size: 14px;
   color: #232323;
 }
+.footer .container .right-box {
+  padding: 1opx 20px;
+  width: 60%;
+}
+.footer .container .right-box .header {
+  max-width: 100%;
+  align-items: center;
+}
+.footer .container .right-box img {
+  margin-left: 40%;
+  height: 80px;
+}
+.footer .container .right-box .header p {
+  margin-top: 15px;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 600;
+  color: #8a8a8a;
+}
